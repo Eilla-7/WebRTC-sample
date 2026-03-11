@@ -1,0 +1,32 @@
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  padding-top: 50px;
+}
+
+#number{
+  font-size: 22px;
+  width: 180px;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#dialpad button{
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  margin: 5px;
+  border-radius: 12px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  transition: 0.2s;
+}
+
+#dialpad button:hover{
+  background: #45a049;
+}
