@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WebRTC Sample</title>
+<meta charset="UTF-8">
+<title>WebRTC Dial Pad</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>WebRTC Sample</h2>
+<h2>WebRTC Dial Pad (Asterisk)</h2>
 
 <input id="number" placeholder="Enter number">
 
 <div id="dialpad">
-  <button onclick="add('1')">1</button>
-  <button onclick="add('2')">2</button>
-  <button onclick="add('3')">3</button><br>
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button><br>
 
-  <button onclick="add('4')">4</button>
-  <button onclick="add('5')">5</button>
-  <button onclick="add('6')">6</button><br>
+<button onclick="add('4')">4</button>
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button><br>
 
-  <button onclick="add('7')">7</button>
-  <button onclick="add('8')">8</button>
-  <button onclick="add('9')">9</button><br>
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+<button onclick="add('9')">9</button><br>
 
-  <button onclick="add('*')">*</button>
-  <button onclick="add('0')">0</button>
-  <button onclick="add('#')">#</button>
+<button onclick="add('*')">*</button>
+<button onclick="add('0')">0</button>
+<button onclick="add('#')">#</button>
 </div>
 
 <br>
 <button onclick="call()">Call</button>
 <button onclick="hangup()">Hangup</button>
 
-<h3 id="status"></h3>
+<p id="status">Disconnected</p>
 
+<script src="https://cdn.jsdelivr.net/npm/jssip@3.10.0/dist/jssip.min.js"></script>
 <script src="app.js"></script>
+
 </body>
 </html>
